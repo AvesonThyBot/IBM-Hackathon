@@ -1,0 +1,109 @@
+/* ------ Colours for themes ------ */
+/* Dark Theme */
+[data-bs-theme="dark"] {
+  --bs-body-bg: #090103 !important;
+
+  .bg-light,
+  .text-bg-light,
+  .btn-light,
+  .btn-outline-light:hover {
+    background-color: #ebd34c !important;
+    border-color: #ebd34c !important;
+  }
+  .btn-outline-light {
+    border-color: #ebd34c !important;
+  }
+  .navbar {
+    background-color: #7c520e !important;
+  }
+
+  .bi:hover {
+    fill: #d81835 !important;
+    transition: 0.3s;
+  }
+
+  .card-text,
+  .fs-5 {
+    color: #fdf2f4 !important;
+  }
+
+  .list-group-item a {
+    color: #ebd34c !important;
+  }
+
+  .list-group-item a:hover {
+    color: #d81835 !important;
+  }
+
+  ::selection {
+    background: #d81835 !important;
+  }
+}
+
+/* Light theme */
+[data-bs-theme="light"] {
+  --bs-body-bg: #fef6f8 !important;
+
+  .bg-dark,
+  .text-bg-dark,
+  .btn-dark,
+  .btn-outline-dark:hover {
+    background-color: #b39b14 !important;
+    border-color: #b39b14 !important;
+  }
+
+  .btn-outline-dark {
+    border-color: #b39b14 !important;
+  }
+
+  .navbar {
+    background-color: #f1c783 !important;
+  }
+
+  .bi:hover {
+    fill: #e72744 !important;
+    transition: 0.3s;
+  }
+
+  .card-text,
+  .fs-5 {
+    color: #0d0204 !important;
+  }
+
+  .list-group-item a {
+    color: #b39b14 !important;
+  }
+
+  .list-group-item a:hover {
+    color: #e72744 !important;
+  }
+
+  ::selection {
+    background: #e72744 !important;
+  }
+}
+
+/* Force height for footer */
+main {
+  min-height: 100dvh !important;
+}
+
+/* ------  Scroll Bar ------ */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #212529;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 20px;
+}
+
+/* Hero Image */
+#hero {
+  max-width: 100dvw !important;
+  max-height: 50dvh !important;
+}
