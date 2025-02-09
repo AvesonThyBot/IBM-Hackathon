@@ -1,12 +1,12 @@
 <?php
 
-require_once ("../include/autoloader.inc.php");
+require_once("../include/autoloader.inc.php");
 
 // Create object for webpage
-$webpage = new Webpage("About Us - RZA", "about");
+$webpage = new Webpage("About Us - investED", "about");
 
 // Insert header
-require_once ("../include/header.inc.php");
+require_once("../include/header.inc.php");
 ?>
 
 <main>
@@ -105,4 +105,4 @@ require_once ("../include/header.inc.php");
 </main>
 
 
-<?php require_once ("../include/footer.inc.php"); ?>
+<?php require_once("../include/footer.inc.php"); ?>

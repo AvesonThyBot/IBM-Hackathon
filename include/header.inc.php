@@ -13,13 +13,9 @@ session_start();
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../images/logo-white.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <!-- Bootstrap CSS 5.3.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <?php if ($webpage->getFlatPickr()) { ?>
-        <!-- FlatPickr CSS -->
-        <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
-    <?php } ?>
     <!-- Other CSS -->
     <link rel="stylesheet" href="../styles/mystyles.css">
 </head>
@@ -27,7 +23,7 @@ session_start();
 <body data-bs-theme="">
     <nav class="navbar navbar-expand-lg bg-body-tertiary nav-pills">
         <div class="container-fluid">
-            <img class="navbar-brand" src="../images/logo-white.png" height="60px" draggable="false" />
+            <img class="navbar-brand" src="../images/logo.png" height="60px" draggable="false" />
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,25 +37,19 @@ session_start();
                         <a class="nav-link <?php echo $webpage->getActive("about") ?>" href="../pages/about.php">About
                             Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link <?php echo $webpage->getActive("hotel") ?>" href="../pages/hotel.php">Hotel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link <?php echo $webpage->getActive("ticket") ?>" href="../pages/ticket.php">Ticket</a>
-                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle <?php echo $webpage->getActive("discover") ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Discover
+                        <a class="nav-link dropdown-toggle <?php echo $webpage->getActive("dropdown") ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Education
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item <?php echo $webpage->getActive("animal") ?>" href="../pages/animal.php">Animal</a>
+                                <a class="dropdown-item <?php echo $webpage->getActive("education") ?>" href="../pages/education.php">Education</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li>
-                                <a class="dropdown-item <?php echo $webpage->getActive("facility") ?>" href="../pages/facility.php">Facility</a>
+                                <a class="dropdown-item <?php echo $webpage->getActive("sandbox") ?>" href="../pages/sandbox.php">Sandbox</a>
                             </li>
                         </ul>
                     </li>

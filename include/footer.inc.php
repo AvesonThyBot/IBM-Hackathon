@@ -58,17 +58,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+<?php if ($webpage->getAPI()) { ?>
+    <script src="/scripts/api.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<?php } ?>
 <script src="../scripts/theme.js"></script>
-<?php if ($webpage->getFlatPickr()) { ?>
-    <!-- FlatPickr -->
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/rangePlugin.js"></script>
-    <script src="/scripts/flatpickr.js" defer></script>
-<?php } ?>
-<?php if ($webpage->getAnimal()) { ?>
-    <!-- Animal Script -->
-    <script src="/scripts/animal.js" defer></script>
-<?php } ?>
 </body>
 
 </html>
