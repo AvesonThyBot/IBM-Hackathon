@@ -11,98 +11,156 @@ require_once("../include/header.inc.php");
 
 <main>
     <!-- Hero -->
-    <img class="d-block mx-auto mb-4 image-fluid w-100" src="../images/about.jfif" alt="" id="hero">
-    <h1 class="text-center">About Us Page</h1>
+    <img class="d-block mx-auto mb-4 image-fluid w-100" src="../images/hero.jpeg" alt="" id="hero"></img>
+    <h1 class="text-center">Education</h1>
     <hr class="container border border-3 border-light rounded" />
 
-    <!-- Cards -->
-    <div class="container mb-5">
-        <div class="row gap-2 mx-auto">
-            <!-- History -->
-            <div class="card mt-1" style="width: 26rem;">
-                <div class="card-body">
-                    <h5 class="card-title">History</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Riget Zoo Adventures</h6>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sit
-                        repudiandae labore nam quis. Enim in amet cumque commodi! Modi, neque cum ipsum sit perferendis
-                        tempora. Deserunt aut sint harum!</p>
-                    <div class="card-footer d-flex justify-content-end">
-                        <a href="../pages/ticket.php" class="btn btn-outline-light">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Contact Information -->
-            <div class="card mt-1" style="width: 26rem;">
-                <div class="card-header">
-                    Contacts
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Number: (+44) <a href="tel:07#########">07#########</a></li>
-                    <li class="list-group-item">Support Email: <a href="mailto:support@rza.com">support@rza.com</a></li>
-                    <li class="list-group-item">Information Email: <a
-                            href="mailto:information@rza.com">information@rza.com</a>
-                    </li>
-                    <li class="list-group-item">Address: <a target="_blank"
-                            href="https://maps.app.goo.gl/arr9ktPT4soNyMGA6">RZA</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- FAQ Accordion -->
-            <div class="card m-1" style="width: 26rem;">
-                <div class="card-body">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    FAQ 1
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, atque itaque?
-                                    Dolorem provident, voluptas distinctio, reprehenderit voluptatum modi ut quos dolore
-                                    alias culpa maxime quaerat, dolorum deleniti. Harum, autem iure?</div>
-                            </div>
+
+
+    <div class="album py-5">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                <div class="col">
+                    <div class="card shadow-lg rounded-4 mx-4">
+                        <img src="/images/stock5.jpeg" class="card-img-top rounded-top-4" width="100%" height="225" alt="Top 10 Stocks">
+                        <div class="card-header">
+                            <h3>Top 10 Stocks</h3>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    FAQ 2
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, atque itaque?
-                                    Dolorem provident, voluptas distinctio, reprehenderit voluptatum modi ut quos dolore
-                                    alias culpa maxime quaerat, dolorum deleniti. Harum, autem iure?</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    FAQ 3
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, atque itaque?
-                                    Dolorem provident, voluptas distinctio, reprehenderit voluptatum modi ut quos dolore
-                                    alias culpa maxime quaerat, dolorum deleniti. Harum, autem iure?</div>
+                        <div class="card-body">
+                            <p class="card-text">A curated list of the top-performing stocks based on market trends, growth, and stability.</p>
+                            <div>
+                                <span class="text-body-secondary float-end">9 mins</span>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="col">
+                    <div class="card shadow-lg rounded-4 mx-4">
+                        <img src="/images/stock3.jpeg" class="card-img-top rounded-top-4" width="100%" height="225" alt="Top 10 Stocks">
+                        <div class="card-header">
+                            <h3>How to Analyze Stocks</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Learn key metrics like P/E ratio, EPS, and dividend yield to evaluate stocks effectively.</p>
+                            <div>
+                                <span class="text-body-secondary float-end">8 mins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-lg rounded-4 mx-4">
+                        <img src="/images/stocks6.jpg" class="card-img-top rounded-top-4" width="100%" height="225" alt="Top 10 Stocks">
+                        <div class="card-header">
+                            <h3>Best Dividend Stocks</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">A list of stable companies that provide consistent and high dividend payouts to investors.</p>
+                            <div>
+                                <span class="text-body-secondary float-end">7 mins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-lg rounded-4 mx-4">
+                        <img src="/images/stock4.jpeg" class="card-img-top rounded-top-4" width="100%" height="225" alt="Top 10 Stocks">
+                        <div class="card-header">
+                            <h3>Stock Market Trends</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Stay updated on current market trends, sector performances, and investor sentiments.</p>
+                            <div>
+                                <span class="text-body-secondary float-end">6 mins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-lg rounded-4 mx-4">
+                        <img src="/images/stocks2.jpeg" class="card-img-top rounded-top-4" width="100%" height="225" alt="Top 10 Stocks">
+                        <div class="card-header">
+                            <h3>Investing Strategies</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Explore different strategies such as value investing, growth investing, and index funds.</p>
+                            <div>
+                                <span class="text-body-secondary float-end">10 mins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-lg rounded-4 mx-4">
+                        <img src="/images/etf.jpeg" class="card-img-top rounded-top-4" width="100%" height="225" alt="Top 10 Stocks">
+                        <div class="card-header">
+                            <h3>Understanding ETFs</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Learn about Exchange-Traded Funds and how they provide diversified exposure to the market.</p>
+                            <div>
+                                <span class="text-body-secondary float-end">5 mins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-lg rounded-4 mx-4">
+                        <img src="/images/stocks.jpeg" class="card-img-top rounded-top-4" width="100%" height="225" alt="Top 10 Stocks">
+                        <div class="card-header">
+                            <h3>Stock Market Risks</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Understand the risks involved in stock investing and how to manage them effectively.</p>
+                            <div>
+                                <span class="text-body-secondary float-end">7 mins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-lg rounded-4 mx-4">
+                        <img src="/images/investment.jpeg" class="card-img-top rounded-top-4" width="100%" height="225" alt="Top 10 Stocks">
+                        <div class="card-header">
+                            <h3>Long-term vs. Short-term Investing</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Discover the benefits and risks of long-term investing compared to short-term trading.</p>
+                            <div>
+                                <span class="text-body-secondary float-end">8 mins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-lg rounded-4 mx-4">
+                        <img src="/images/money.jpeg" class="card-img-top rounded-top-4" width="100%" height="225" alt="Top 10 Stocks">
+                        <div class="card-header">
+                            <h3>How to Read Stock Charts</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Gain insights into technical analysis and learn how to interpret stock charts.</p>
+                            <div>
+                                <span class="text-body-secondary float-end">9 mins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
         </div>
     </div>
-
 </main>
-
 
 <?php require_once("../include/footer.inc.php"); ?>

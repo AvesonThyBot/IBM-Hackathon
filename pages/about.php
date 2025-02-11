@@ -11,7 +11,7 @@ require_once("../include/header.inc.php");
 
 <main>
     <!-- Hero -->
-    <img class="d-block mx-auto mb-4 image-fluid w-100" src="../images/about.jfif" alt="" id="hero">
+    <img class="d-block mx-auto mb-4 image-fluid w-100" src="../images/hero.jpeg" alt="" id="hero">
     <h1 class="text-center">About Us Page</h1>
     <hr class="container border border-3 border-light rounded" />
 
@@ -22,7 +22,7 @@ require_once("../include/header.inc.php");
             <div class="card mt-1" style="width: 26rem;">
                 <div class="card-body">
                     <h5 class="card-title">History</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Riget Zoo Adventures</h6>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">InvestED</h6>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sit
                         repudiandae labore nam quis. Enim in amet cumque commodi! Modi, neque cum ipsum sit perferendis
                         tempora. Deserunt aut sint harum!</p>
@@ -38,12 +38,12 @@ require_once("../include/header.inc.php");
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Number: (+44) <a href="tel:07#########">07#########</a></li>
-                    <li class="list-group-item">Support Email: <a href="mailto:support@rza.com">support@rza.com</a></li>
+                    <li class="list-group-item">Support Email: <a href="mailto:support@invested.com">support@invested.com</a></li>
                     <li class="list-group-item">Information Email: <a
-                            href="mailto:information@rza.com">information@rza.com</a>
+                            href="mailto:information@invested.com">information@invested.com</a>
                     </li>
                     <li class="list-group-item">Address: <a target="_blank"
-                            href="https://maps.app.goo.gl/arr9ktPT4soNyMGA6">RZA</a>
+                            href="https://maps.app.goo.gl/arr9ktPT4soNyMGA6">InvestED</a>
                     </li>
                 </ul>
             </div>

@@ -20,7 +20,7 @@ session_start();
     <link rel="stylesheet" href="../styles/mystyles.css">
 </head>
 
-<body data-bs-theme="">
+<body data-bs-theme="light">
     <nav class="navbar navbar-expand-lg bg-body-tertiary nav-pills">
         <div class="container-fluid">
             <img class="navbar-brand" src="../images/logo.png" height="60px" draggable="false" />
@@ -34,8 +34,10 @@ session_start();
                         <a class="nav-link <?php echo $webpage->getActive("home") ?>" href="../index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?php echo $webpage->getActive("about") ?>" href="../pages/about.php">About
-                            Us</a>
+                        <a class="nav-link <?php echo $webpage->getActive("about") ?>" href="../pages/about.php">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?php echo $webpage->getActive("leaderboard") ?>" href="../pages/leaderboard.php">Leaderboard</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle <?php echo $webpage->getActive("dropdown") ?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

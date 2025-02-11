@@ -3,26 +3,26 @@
         <div class="col-6 col-md-2 mb-3">
             <h5>Pages</h5>
             <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="../index.php" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="../pages/about.php" class="nav-link p-0 text-muted">About</a></li>
-                <li class="nav-item mb-2"><a href="../pages/animal.php" class="nav-link p-0 text-muted">Animal</a></li>
-                <li class="nav-item mb-2"><a href="../pages//ticket.php" class="nav-link p-0 text-muted">Ticket</a></li>
-                <li class="nav-item mb-2"><a href="../pages/hotel.php" class="nav-link p-0 text-muted">Hotel</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Education</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sandbox</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Account</a></li>
             </ul>
         </div>
 
         <div class="col-6 col-md-2 mb-3">
             <h5>Other</h5>
             <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="../pages/policy.php" class="nav-link p-0 text-muted">Privacy
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy
                         Policy</a></li>
-                <li class="nav-item mb-2"><a href="../pages/tcs.php" class="nav-link p-0 text-muted">Terms &
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms &
                         Conditions</a></li>
             </ul>
         </div>
 
         <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p>© 2024 RZA Company, Inc. All rights reserved.</p>
+            <p>© 2025 investED Company, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
                 <li class="ms-3">
                     <a href="https://facebook.com" target="_blank">
@@ -59,6 +59,10 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 <?php if ($webpage->getAPI()) { ?>
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
     <script src="/scripts/api.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <?php } ?>

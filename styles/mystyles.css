@@ -1,109 +1,127 @@
 /* ------ Colours for themes ------ */
-/* Dark Theme */
-[data-bs-theme="dark"] {
-  --bs-body-bg: #090103 !important;
+/* Light Theme (Default Professional Theme) */
+[data-bs-theme="light"] {
+	--bs-body-bg: #ffffff !important;
+	--bs-primary: #0b4f6c; /* Deep blue for professional feel */
+	--bs-secondary: #ffcc00; /* Gold for premium look */
+	--bs-text-color: #212529;
 
-  .bg-light,
-  .text-bg-light,
-  .btn-light,
-  .btn-outline-light:hover {
-    background-color: #ebd34c !important;
-    border-color: #ebd34c !important;
-  }
-  .btn-outline-light {
-    border-color: #ebd34c !important;
-  }
-  .navbar {
-    background-color: #7c520e !important;
-  }
+	/* Buttons & Elements */
+	.bg-dark,
+	.text-bg-dark,
+	.btn-dark,
+	.btn-outline-dark:hover {
+		background-color: var(--bs-primary) !important;
+		border-color: var(--bs-primary) !important;
+		color: #ffffff !important;
+	}
 
-  .bi:hover {
-    fill: #d81835 !important;
-    transition: 0.3s;
-  }
+	.btn-outline-dark {
+		border-color: var(--bs-primary) !important;
+		color: var(--bs-primary) !important;
+	}
 
-  .card-text,
-  .fs-5 {
-    color: #fdf2f4 !important;
-  }
+	.navbar {
+		background-color: #f5f7fa !important; /* Light greyish background for clean navbar */
+		border-bottom: 3px solid var(--bs-secondary);
+	}
 
-  .list-group-item a {
-    color: #ebd34c !important;
-  }
+	.bi:hover {
+		fill: var(--bs-secondary) !important;
+		transition: 0.3s;
+	}
 
-  .list-group-item a:hover {
-    color: #d81835 !important;
-  }
+	.card-text,
+	.fs-5 {
+		color: var(--bs-text-color) !important;
+	}
 
-  ::selection {
-    background: #d81835 !important;
-  }
+	.list-group-item a {
+		color: var(--bs-primary) !important;
+	}
+
+	.list-group-item a:hover {
+		color: var(--bs-secondary) !important;
+	}
+
+	::selection {
+		background: var(--bs-secondary) !important;
+		color: #ffffff !important;
+	}
 }
 
-/* Light theme */
-[data-bs-theme="light"] {
-  --bs-body-bg: #fef6f8 !important;
+/* Dark Theme */
+[data-bs-theme="dark"] {
+	--bs-body-bg: #091a2e !important; /* Deep navy background */
+	--bs-primary: #ffcc00; /* Gold for contrast */
+	--bs-secondary: #d4af37; /* Premium gold */
+	--bs-text-color: #f8f9fa;
 
-  .bg-dark,
-  .text-bg-dark,
-  .btn-dark,
-  .btn-outline-dark:hover {
-    background-color: #b39b14 !important;
-    border-color: #b39b14 !important;
-  }
+	/* Buttons & Elements */
+	.bg-light,
+	.text-bg-light,
+	.btn-light,
+	.btn-outline-light:hover {
+		background-color: var(--bs-secondary) !important;
+		border-color: var(--bs-secondary) !important;
+		color: #000000 !important;
+	}
 
-  .btn-outline-dark {
-    border-color: #b39b14 !important;
-  }
+	.btn-outline-light {
+		border-color: var(--bs-secondary) !important;
+		color: var(--bs-secondary) !important;
+	}
 
-  .navbar {
-    background-color: #f1c783 !important;
-  }
+	.navbar {
+		background-color: #0b2538 !important; /* Dark blue */
+		border-bottom: 3px solid var(--bs-primary);
+	}
 
-  .bi:hover {
-    fill: #e72744 !important;
-    transition: 0.3s;
-  }
+	.bi:hover {
+		fill: var(--bs-primary) !important;
+		transition: 0.3s;
+	}
 
-  .card-text,
-  .fs-5 {
-    color: #0d0204 !important;
-  }
+	.card-text,
+	.fs-5 {
+		color: var(--bs-text-color) !important;
+	}
 
-  .list-group-item a {
-    color: #b39b14 !important;
-  }
+	.list-group-item a {
+		color: var(--bs-secondary) !important;
+	}
 
-  .list-group-item a:hover {
-    color: #e72744 !important;
-  }
+	.list-group-item a:hover {
+		color: var(--bs-primary) !important;
+	}
 
-  ::selection {
-    background: #e72744 !important;
-  }
+	::selection {
+		background: var(--bs-primary) !important;
+		color: #000000 !important;
+	}
 }
 
 /* Force height for footer */
 main {
-  min-height: 100dvh !important;
+	min-height: 100dvh !important;
 }
 
 /* ------  Scroll Bar ------ */
 ::-webkit-scrollbar {
-  width: 0.5rem;
+	width: 0.5rem;
 }
 
 ::-webkit-scrollbar-track {
-  background: #212529;
+	background: #e5e7eb;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: white;
-  border-radius: 20px;
+	background: #0b4f6c;
+	border-radius: 20px;
 }
 
 /* Hero Image */
 #hero {
-  max-width: 100dvw !important;
-  max-height: 50dvh !important;
+	max-width: 100dvw !important;
+	max-height: 50dvh !important;
 }
