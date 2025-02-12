@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 09, 2025 at 11:44 AM
+-- Generation Time: Feb 12, 2025 at 10:26 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -34,6 +34,14 @@ CREATE TABLE `gamification` (
   `date_and_time` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `gamification`
+--
+
+INSERT INTO `gamification` (`leader_id`, `user_id`, `score`, `date_and_time`) VALUES
+(1, 6, 100.00, '2025-02-12 08:28:24'),
+(2, 7, 89.20, '2025-02-12 08:44:50');
+
 -- --------------------------------------------------------
 
 --
@@ -61,6 +69,14 @@ CREATE TABLE `users` (
   `email` varchar(80) NOT NULL,
   `password_txt` varchar(80) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`UserID`, `firstName`, `lastName`, `email`, `password_txt`) VALUES
+(6, 'Aveson', 'Carvalho', 'a@gmail.com', '$2y$10$oNSE11mBfzUPIG5WuFiRieosm.zWRAWEZg6OPPc4YoCihH6NfKXSe'),
+(7, 'Gabriel', 'Mathura', 'g@gmail.com', '$2y$10$jLgz4bEr8jWzs9X4VB1Cy.8nVVOACmd8vyNiXMIbdSMXbm2sYZA9K');
 
 --
 -- Indexes for dumped tables
@@ -96,7 +112,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `gamification`
 --
 ALTER TABLE `gamification`
-  MODIFY `leader_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `leader_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `stocks`
@@ -108,7 +124,7 @@ ALTER TABLE `stocks`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables
@@ -118,7 +134,7 @@ ALTER TABLE `users`
 -- Constraints for table `stocks`
 --
 ALTER TABLE `stocks`
-  ADD CONSTRAINT `stocks_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `users` (`userID`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `stocks_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `users` (`UserID`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

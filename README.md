@@ -1,4 +1,4 @@
-# Team [Your Team Number] - Project Submission
+# Team 1 - Project Submission
 
 ## 🏆 Team Information
 
