@@ -90,7 +90,7 @@ class Account extends Dbh {
         // Fetch ID
         $id = $this->getID($this->values["email"]);
         // Assign customerID cookie
-        setcookie("userID", $id["userID"], time() + (86400 * 30), "/");
+        setcookie("userID", $id["user_id"], time() + (86400 * 30), "/");
 
         if ($id["isAdmin"] == 1) {
             setcookie("isAdmin", true, time() + (86400 * 30), "/");
